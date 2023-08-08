@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>Journal</title>
+  </head>
+  <body class="bg-gradient-to-l from-cyan-500 to-blue-500">
+    <!-- Form container  -->
+    <div
+      class="mx-auto px-4 py-10 mt-10 font-['Helvetica'] w-10/12 md:w-3/6 lg:w-4/12 bg-cyan-50 rounded-xl"
+    >
+      <div>
+        <h1 class="text-center text-blue-800 font-bold text-3xl md:text-4xl">
+          Sign Up
+        </h1>
+      </div>
+      <!-- user image -->
+      <div class="bg-transparent">
+        <img class="w-2/6 my-8 mx-auto" src="/img/user.png" alt="profile-img" />
+      </div>
+      <!-- form imputs -->
+      <div>
+        <form class="mx-auto w-3/4" method="post">
+          <div>
+            <!-- Full name  -->
+            <input
+              class="min-w-full p-4 my-2 rounded-xl w-3/5 drop-shadow focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
+              type="text"
+              placeholder="Marlon Morales"
+            />
+          </div>
+          <div>
+            <!-- Email  -->
+            <input
+              class="min-w-full p-4 my-2 rounded-xl w-3/5 drop-shadow focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
+              type="email"
+              placeholder="example@email.com"
+            />
+          </div>
+          <div>
+            <!-- Password -->
+            <input
+              class="min-w-full p-4 my-2 rounded-xl w-3/5 drop-shadow focus:outline-none focus:border-sky-500 focus:ring-1 focus:ring-sky-500"
+              type="password"
+              name=""
+              id=""
+              placeholder="Password"
+            />
+          </div>
+          <div>
+            <!-- Submit Button  -->
+            <input
+              class="min-w-full p-3 mt-4 mb-2 rounded-2xl drop-shadow-md bg-indigo-500 px-4 hover:bg-indigo-700"
+              type="submit"
+              value="Sign Up"
+            />
+          </div>
+          <div class="text-xs font-semibold">
+            <!-- Already have an accout ? -->
+            <p class="text-center">
+              Already have and account?
+              <span class="text-blue-600"><a href="">Log in</a></span>
+            </p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer></footer>
+  </body>
+</html>
