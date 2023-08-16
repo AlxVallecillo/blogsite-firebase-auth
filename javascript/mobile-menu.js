@@ -5,12 +5,13 @@ hamBtn.addEventListener(
   "click",
   (e) => {
     document.querySelector("body").classList.toggle("overflow-y-hidden");
-    mobileNavbar();
+    toggleMobileNavMenu();
   },
   true
 );
 
 // Toggle the position of the mobile menu navigation to position relative left: 0px;
-function mobileNavbar() {
+function toggleMobileNavMenu() {
   document.getElementById("mobile-menu").classList.toggle("left-0");
+  document.getElementById("mobile-menu").classList.toggle("left-[-100%]");
 }

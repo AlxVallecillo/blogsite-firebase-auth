@@ -11,10 +11,7 @@
   <body class="bg-gray-900">
     <nav class="flex items-center justify-between bg-gray-800 p-1">
       <div class="flex flex-wrap items-center justify-center">
-        <a
-          href="https://tailwindcss.com/docs/space"
-          class="px-3 py-2 text-white font-medium flex items-center"
-        >
+        <a href="#" class="px-3 py-2 text-white font-medium flex items-center">
           <img class="h-16 rounded-xl" src="img/tailwindcss.jpg" alt="" />
         </a>
       </div>
@@ -28,7 +25,7 @@
       <!-- MObile menu toggle   -->
       <button
         id="menuBtn"
-        class="lg:hidden p-2 w-12 h-12 mr-4 rounded-lg hover:z-30 hover:bg-gray-500 focus:ring focus:ring-gray-500 text-gray-400"
+        class="lg:hidden p-2 w-12 h-12 mr-4 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-500 text-gray-400"
       >
         <span class="sr-only"> open menu</span>
         <svg
@@ -37,7 +34,7 @@
           viewBox="0 0 24 24"
           stroke-width="2"
           stroke="currentColor"
-          class="w-8 h-8 p-1 z-10"
+          class="w-8 h-8 p-1"
         >
           <path
             stroke-linecap="round"
@@ -51,23 +48,29 @@
     <!-- Mobile menu  -->
     <div
       id="mobile-menu"
-      class="items-center leading-10 pt-6 lg:hidden justify-center mx-auto min-w-full text-center font-semibold text-2xl float-right left-[-100%] fixed lg:relative lg:transition-none h-[100vh] bg-slate-700 uppercase transition-all duration-200"
+      class="items-center text-center leading-10 pt-6 lg:hidden justify-center mx-auto min-w-full font-semibold text-2xl float-right left-[-100%] h-[100vh] fixed transition-all duration-200 lg:relative lg:transition-none bg-slate-700 uppercase"
     >
       <a
         href="#"
-        class="text-white font-semibold block trasiton duration-150 opacity-80 hover:bg-slate-500 py-4"
+        class="text-white font-semibold block opacity-80 hover:bg-slate-500 py-4"
       >
         About</a
       >
       <a
         href="#"
-        class="text-white font-semibold block trasiton duration-150 opacity-80 hover:bg-slate-500 py-4"
+        class="text-white font-semibold block opacity-80 hover:bg-slate-500 py-4"
       >
         New Post
       </a>
       <a
+        href=""
+        class="text-white font-semibold block opacity-80 hover:bg-slate-500 py-4"
+      >
+        Contact</a
+      >
+      <a
         href="login.html"
-        class="text-white font-semibold block trasiton duration-150 opacity-80 hover:bg-slate-500 py-4"
+        class="text-white font-semibold block opacity-80 hover:bg-slate-500 py-4"
       >
         Log Out</a
       >
@@ -128,6 +131,8 @@
         pariatur eaque.
       </p>
     </article>
-    <script src="javascript/ui.js" defer></script>
+    <script type="module" src="javascript/auth-ui.js" defer></script>
+    <script type="module" src="javascript/application.js" defer></script>
+    <script src="javascript/mobile-menu.js" defer></script>
   </body>
 </html>
