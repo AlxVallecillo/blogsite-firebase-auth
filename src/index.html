@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+
+    <title>Journal</title>
+  </head>
+  <body class="bg-gray-900">
+    <nav
+      class="lg:flex lg:flex-wrap lg:items-center bg-gray-800 lg:justify-between"
+    >
+      <div class="flex items-center justify-between p-1">
+        <div class="flex flex-wrap items-center justify-center lg:ml-20">
+          <a
+            href="index.html"
+            class="px-6 py-2 text-white text-[3rem] font-serif font-medium flex items-center"
+            >Journal
+          </a>
+        </div>
+
+        <!-- MObile menu toggle   -->
+        <button
+          id="menuBtn"
+          class="lg:hidden p-2 w-12 h-12 mr-4 rounded-lg hover:bg-gray-700 focus:ring focus:ring-gray-500 text-gray-400"
+        >
+          <span class="sr-only"> open menu</span>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-8 h-8 p-1"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+      <div
+        id="nav-items"
+        class="lg:flex lg:bg-slate-800 lg:flex-wrap lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:pr-4 lg:h-auto lg:static lg:mr-20 lg:pt-0 lg:transition-none lg:min-w-fit items-center space-y-2 text-center min-w-full fixed flex flex-col leading-10 pt-6 mx-auto max-w-xl font-semibold text-xl left-[-100%] h-[100vh] transition-all duration-200 bg-gray-900 uppercase"
+      >
+        <a
+          href=""
+          class="text-white hidden logged-in font-semibold hover:bg-slate-600 hover:min-w-full lg:hover:min-w-fit lg:hover:bg-transparent py-2"
+        >
+          Account
+        </a>
+        <a
+          href=""
+          class="text-white hidden logged-in font-semibold hover:bg-slate-600 hover:min-w-full lg:hover:min-w-fit lg:hover:bg-transparent py-2"
+        >
+          New Post</a
+        >
+        <a
+          href=""
+          class="text-white hidden logged-in font-semibold hover:bg-slate-600 hover:min-w-full lg:hover:min-w-fit lg:hover:bg-transparent py-2"
+        >
+          Trending
+        </a>
+        <a
+          href="login.html"
+          class="text-white hidden logged-out font-semibold hover:bg-slate-600 hover:min-w-full lg:hover:min-w-fit lg:hover:bg-transparent py-2"
+        >
+          Log In</a
+        >
+        <a
+          id="log-out"
+          href=""
+          class="text-white hidden logged-in font-semibold hover:bg-slate-600 hover:min-w-full lg:hover:min-w-fit lg:hover:bg-transparent py-2"
+        >
+          Log Out</a
+        >
+        <a
+          href="signup.html"
+          class="text-white hidden logged-out font-semibold hover:bg-slate-600 hover:min-w-full lg:hover:min-w-fit lg:hover:bg-transparent py-2"
+        >
+          Sign Up</a
+        >
+      </div>
+    </nav>
+
+    <article
+      class="mx-auto pt-5 px-16 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
+    >
+      <h2 class="text-2xl my-4">Hello TailwindCSS</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde
+        optio aperiam alias repellendus et iure, consequatur totam reprehenderit
+        nobis neque ex veniam magni accusantium placeat corporis voluptas
+        pariatur eaque.
+      </p>
+    </article>
+    <article
+      class="mx-auto pt-5 px-16 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
+    >
+      <h2 class="text-2xl my-4">Microsoft Material UI</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Portua Aspit
+        veut Dart. Porro unde optio aperiam alias repellendus et iure,
+        consequatur totam reprehenderit nobis neque ex veniam magni accusantium
+        placeat corporis voluptas pariatur eaque.
+      </p>
+    </article>
+    <article
+      class="mx-auto pt-5 px-16 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
+    >
+      <h2 class="text-2xl my-4">Firebase Firestore</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde
+        optio aperiam alias repellendus et iure, consequatur totam reprehenderit
+        nobis neque ex veniam magni accusantium placeat corporis voluptas
+        pariatur eaque.
+      </p>
+    </article>
+    <article
+      class="mx-auto pt-5 px-16 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
+    >
+      <h2 class="text-2xl my-4">Vercel As another option to free hosting</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde
+        optio aperiam alias repellendus et iure, consequatur totam reprehenderit
+        nobis neque ex veniam magni accusantium placeat corporis voluptas
+        pariatur eaque.
+      </p>
+    </article>
+    <article
+      class="mx-auto pt-5 px-16 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
+    >
+      <h2 class="text-2xl my-4">Heroku no longer free</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro unde
+        optio aperiam alias repellendus et iure, consequatur totam reprehenderit
+        nobis neque ex veniam magni accusantium placeat corporis voluptas
+        pariatur eaque.
+      </p>
+    </article>
+    <script type="module" src="../javascript/auth-ui.js" defer></script>
+    <script type="module" src="../javascript/index.js"></script>
+    <script src="../javascript/mobile-menu.js" defer></script>
+  </body>
+</html>
+
+<
