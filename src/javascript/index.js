@@ -38,7 +38,9 @@ async function monitorAuthState() {
 
 monitorAuthState();
 
-DomElems.logOutBtn.onclick = async () => {
+async function logOut() {
   await signOut(auth);
   console.log("user log out");
-};
+}
+
+DomElems.logOutBtn.addEventListener("click", logOut);
