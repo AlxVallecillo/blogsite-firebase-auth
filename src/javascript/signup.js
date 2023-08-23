@@ -7,6 +7,7 @@ import {
   preventFormReload,
   spanPasswordErr,
   spanEmailErr,
+  showPasswordInput,
   signUpButton,
   signUpEmail,
   signUpPassword,
@@ -40,23 +41,23 @@ const auth = getAuth(firebaseApp); // initialized the Authg service and pass in 
 // Create new user and login  ======================================================================================================
 const createNewUser = async () => {
   preventFormReload("signupForm");
-  const signupEmail = signUpEmail.value;
-  const signupPassword = signUpPassword.value;
+  const email = signUpEmail.value;
+  const password = signUpPassword.value;
 
-  const newUser = await createUserWithEmailAndPassword(
-    auth,
-    signupEmail,
-    signupPassword
-  )
-    .then((newUser) => {
-      window.location.href = "index.html";
-      console.log(newUser.user);
-    })
-    .catch((error) => {
-      window.location.href = "404.html";
-      // console.log(error.code);
-      // console.log(error.message);
-    });
+  let emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  if (emailRegex.test(email)) {
+    showPasswordInput();
+
+    // await createUserWithEmailAndPassword(auth, email, password)
+    //   .then((user) => {
+    //     window.location.href = "index.html";
+    //   })
+    //   .catch((error) => {
+    //     window.location.href = "404.html";
+    //     // console.log(error.code);
+    //     // console.log(error.message);
+    //   });
+  }
 };
 
 signUpButton.addEventListener("click", createNewUser);

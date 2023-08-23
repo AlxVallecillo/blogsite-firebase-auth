@@ -8,7 +8,7 @@
 
     <title>Journal</title>
   </head>
-  <body class="bg-gray-900">
+  <body class="bg-gray-900 lg:overflow-y-visible">
     <nav
       class="lg:flex lg:flex-wrap lg:items-center bg-gray-800 lg:justify-between"
     >
@@ -45,7 +45,7 @@
       </div>
       <div
         id="nav-items"
-        class="lg:flex lg:bg-slate-800 lg:flex-wrap lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:pr-4 lg:h-auto lg:static lg:mr-20 lg:pt-0 lg:transition-none lg:min-w-fit items-center space-y-2 text-center min-w-full fixed flex flex-col leading-10 pt-6 mx-auto max-w-xl font-semibold text-xl left-[-100%] h-[100vh] transition-all duration-200 bg-gray-900 uppercase"
+        class="lg:flex lg:bg-slate-800 lg:flex-wrap lg:flex-row lg:items-center lg:space-x-6 lg:space-y-0 lg:pr-4 lg:h-auto lg:static lg:mr-20 lg:pt-0 lg:transition-none lg:min-w-fit items-center space-y-2 text-center min-w-full fixed flex flex-col font-serif leading-10 pt-6 mx-auto max-w-xl font-semibold text-xl left-[-100%] h-[100vh] transition-all duration-200 bg-gray-900 uppercase"
       >
         <a
           href=""
@@ -88,7 +88,7 @@
     </nav>
 
     <article
-      class="mx-auto pt-5 px-16 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
+      class="mx-auto pt-5 px-6 md:px-12 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
     >
       <h2 class="text-2xl my-4">Hello TailwindCSS</h2>
       <p>
@@ -99,7 +99,7 @@
       </p>
     </article>
     <article
-      class="mx-auto pt-5 px-16 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
+      class="mx-auto pt-5 px-6 md:px-12 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
     >
       <h2 class="text-2xl my-4">Microsoft Material UI</h2>
       <p>
@@ -110,7 +110,7 @@
       </p>
     </article>
     <article
-      class="mx-auto pt-5 px-16 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
+      class="mx-auto pt-5 px-6 md:px-12 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
     >
       <h2 class="text-2xl my-4">Firebase Firestore</h2>
       <p>
@@ -121,7 +121,7 @@
       </p>
     </article>
     <article
-      class="mx-auto pt-5 px-16 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
+      class="mx-auto pt-5 px-6 md:px-12 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
     >
       <h2 class="text-2xl my-4">Vercel As another option to free hosting</h2>
       <p>
@@ -132,7 +132,7 @@
       </p>
     </article>
     <article
-      class="mx-auto pt-5 px-16 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
+      class="mx-auto pt-5 px-6 md:px-12 text-justify text-slate-200 font-serif md:max-w-lg lg:max-w-2xl"
     >
       <h2 class="text-2xl my-4">Heroku no longer free</h2>
       <p>
@@ -142,6 +142,23 @@
         pariatur eaque.
       </p>
     </article>
+    <hr class="border-b-1 border-b-slate-600 w-11/12 mx-auto my-8" />
+    <footer class="bg-slate-950 text-slate-200 font-serif p-4">
+      <div class="flex justify-between">
+        <div>
+          <h3 class="text-lg font-bold">The Journal</h3>
+          <p>© 2023 The Journal. All rights reserved.</p>
+        </div>
+        <div>
+          <h3 class="text-lg font-bold">Quick Links</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Terms of Use</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="javascript/auth-ui.js" defer></script>
     <script type="module" src="javascript/index.js"></script>
     <script src="javascript/mobile-menu.js" defer></script>
